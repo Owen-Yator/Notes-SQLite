@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:id="@+id/addNOteHeading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Add Note"
+        android:textColor="@color/orange"
+        android:textSize="24sp" />
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_done_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/addNOteHeading"
+        android:layout_marginEnd="6dp"/>
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="395dp"
+        android:layout_height="81dp"
+        android:layout_below="@+id/addNOteHeading"
+        android:layout_marginTop="-619dp"
+        android:background="@drawable/orange_border"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter Title"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/contentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Enter The Description"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins"
+        android:background="@drawable/orange_border"
+        android:layout_below="@+id/titleEditText"
+        android:layout_marginTop="12dp"/>
+</RelativeLayout>
+
+
+
